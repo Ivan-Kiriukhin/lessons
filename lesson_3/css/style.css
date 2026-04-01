@@ -1,0 +1,72 @@
+header p {
+    color: green;
+}
+
+.title,
+.subtitle {
+    color: tomato;
+}
+
+a[href$='p'] {
+    color: aquamarine;
+}
+
+li[class*='list-'] {
+    color: greenyellow;
+}
+
+h1+p {
+    color: navy;
+}
+
+p>span {
+    color: green;
+}
+
+.text {
+    color: blue;
+}
+
+.city-card .central-location {
+    color: orange;
+}
+
+.city-card h3 {
+    color: palegreen;
+}
+
+.info-kharkiv {
+    color: maroon;
+}
+
+.park {
+    color: darkcyan;
+}
+
+.city-card  .symbols {
+    color: brown;
+}
+
+.info-odessa {
+    color: magenta;
+}
+
+.city-card  .palace {
+    color: darkgrey;
+}
+
+h3~ul {
+    color: olive;
+}
+
+li[class^='data'] {
+    color: blueviolet;
+}
+
+#symbols-theater {
+    color: forestgreen;
+}
+
+li[data-city] {
+    color: darkmagenta;
+}
