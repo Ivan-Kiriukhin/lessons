@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada%201918:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroy.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroy-light.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+.header-text {
+    font-family: 'Poppins', serif;
+    font-weight: 100;
+    text-align: right;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-shadow: 3px -5px 2px #7d7373ba;
+}
+
+.item-link--kyiv {
+    font-family: 'Poppins', serif;
+    font-weight: 700;
+    text-decoration: overline;
+    text-decoration-style: dotted;
+    text-decoration-color: cornflowerblue;
+    color: rgba(44, 198, 105, 0.555);
+    letter-spacing: 2px;
+}
+
+.item-link--kharkiv {
+    font-family: 'Gilroy', serif;
+    font-weight: 900;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: #7d7373ba;
+    text-underline-offset: 3px;
+    color: orangered;
+    text-transform: uppercase;
+}
+
+.item-link--odesa {
+    font-family: 'Brygada 1918', serif;
+    font-weight: normal;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: hotpink;
+    color: rgba(66, 51, 17, 0.674);
+}
+
+.link {
+    text-shadow: 2px 4px 2px #ae587cd5;
+    font-family: 'Brygada 1918', serif;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    color: blue;
+}
+
+.kyiv-item--cathedrals {
+    font-family: 'Gilroy', serif;
+    font-weight: 200;
+    word-spacing: 2px;
+}
+
+.kyiv-item--cathedrals span {
+    text-decoration: line-through;
+    text-decoration-color: rgba(39, 28, 8, 0.754);
+}
+
+.kyiv-item--gate {
+    text-transform: capitalize;
+    color: gold;
+}
+.kyiv-item--union {
+    font-size: 18px;
+    color: #18543097;
+}
+
+.kyiv-item--maidan {
+    letter-spacing: 1.4px;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: yellowgreen;
+    text-underline-offset: 5px;
+}
+
+.kyiv-info {
+    line-height: 2.5;
+}
+
+.kyiv-text {
+    letter-spacing: 7px;
+    text-decoration: overline;
+    text-decoration-color: crimson;
+}
+
+.kharkiv-info {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.67;
+    color: rgba(128, 128, 128, 0.76);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: rgb(18, 9, 114);
+}
+
+.kharkiv-text {
+    color: darkred;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-transform: capitalize;
+    text-underline-offset: 5px;
+    line-height: 2.15;
+}
+
+.odesa-info span {
+    font-family: 'Gilroy', serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: rgb(98, 156, 12);
+    line-height: 3;
+}
+
+.odesa-text {
+    text-align: right;
+    word-spacing: 10px;
+}
+
+.odesa-text span {
+    color: tomato;
+    text-decoration: overline;
+    text-decoration-style: double;
+    text-decoration-color: rgba(38, 162, 57, 0.64);
+    letter-spacing: 1.8px;
+}
+
+.homework {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.homework-title {
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: -1.26px;
+    color: #131313;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.homework-title span {
+    color: #1AAF5B;
+    font-weight: 700;
+}
+
+.homework-text {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    line-height: 1.4;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: rgba(44, 198, 105, 0.555);
+}
+
+
+
+
+
+
+
