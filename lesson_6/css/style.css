@@ -1,0 +1,338 @@
+[class*='-container'] {
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.header p {
+    text-align: center;
+    font-size: 32px;
+}
+
+.border {
+    border-top: 5px solid #000;
+    border-right: 5px dotted #559c22;
+    border-bottom: 5px dashed #2e1dec;
+    border-left: 15px double #e9eb48;
+    background-color: #d54f4f;
+    margin-bottom: 15px;
+}
+
+.border p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.solid {
+    background-color: #1b1ba7;
+    border: 5px solid #76ec08;
+    margin-bottom: 15px;
+}
+
+.solid p {
+    text-align: center;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.dotted {
+    background-color: #22a8516a;
+    border: 5px dotted firebrick;
+    margin-bottom: 15px;
+}
+
+.dotted p {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(35, 119, 193);
+}
+
+.dashed {
+    background-color: #c292176a;
+    border: 5px dashed firebrick;
+    margin-bottom: 15px;
+}
+
+.dashed p {
+    text-align: center;
+    font-size: 25px;
+    color: rgba(28, 161, 18, 0.679);
+}
+
+.double {
+    background-color: #6046d46a;
+    border: 15px double rgba(4, 97, 55, 0.698);
+    margin-bottom: 15px;
+}
+
+.double p {
+    text-align: center;
+    font-size: 25px;
+    color: rgba(71, 67, 9, 0.679);
+}
+
+.container-border>div {
+    height: 100px;
+}
+
+.outline {
+    background-color: #d54f4f;
+    outline: 5px solid rgb(58, 58, 2);
+    color: #250657;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.box-shadow {
+    box-shadow:  7px 7px 5px rgba(197, 14, 14, 0.579);
+    height: 100px;
+    width: 700px;
+    background-color: #76ec08;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.container-radius {
+    text-align: center;
+    font-size: 25px;
+}
+
+.border-radius {
+    background-color: #e9eb48;
+    width: 200px;
+    height: 200px;
+    border-radius: 34% 40% 5% 57% / 35% 43% 41% 24%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    opacity: 0.75;
+}
+
+.container-visibility {
+    margin-bottom: 15px;
+}
+
+.visible-block {
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.hidden-block {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+}
+
+.visible {
+    margin-right: 15px;
+    border: 5px dashed #559c22;
+    box-shadow: -5px -5px 7px #d8ed37;
+}
+
+.hidden {
+    border: 5px double #2e1dec;
+    box-shadow: inset 2px 2px 3px #e9eb48;
+}
+
+.hidden p {
+    visibility: hidden;
+}
+
+.bg-color {
+    font-size: 25px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.color {
+    width: 200px;
+    height: 200px;
+    background-color: dimgray;
+}
+
+.bg-gradient {
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 15px;
+    
+}
+
+.gradient {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(90deg,rgba(31, 71, 191, 0.79) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+ .bg-img {
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 15px;
+    vertical-align: top;
+} 
+
+.img {
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/honey.jpg); 
+    overflow: scroll;
+}
+
+.bg-size {
+    font-size: 25px;
+    text-align: center;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.size {
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/honey.jpg); 
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    border: 2px solid #000;
+}
+
+.contain {
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/honey.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid #000;
+}
+
+.homework-furniro {
+    background-image: url(../img/furniro-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding-top: 61px;
+    padding-bottom: 122px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.furniro-block {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.furniro-logo {
+    min-width: 77px;
+}
+
+.furniro-title {
+    font-size: 48px;
+    margin-bottom: 1px;
+}
+
+.home-link {
+    color: #000000;
+    font-weight: 500;
+}
+
+.home-link span {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(../img/furniro-arrow.png);
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    margin-left: 6px;
+    cursor: default;
+}
+
+.checkout-link {
+    color: #000000;
+    font-weight: 300;
+}
+
+.homework-catalyst {
+    background-color: #030303;
+}
+
+.catalyst-bg {
+    background-image: url(../img/catalyst-bg.png);
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.catalyst-title {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #f9efec;
+    padding-top: 94px;
+    padding-bottom: 17px;
+    text-align: center;
+}
+
+.catalyst-button {
+    text-align: center;
+}
+
+.button {
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 13px;
+    background-color: #0A84FF;
+    color: #FFFFFF;
+    margin-bottom: 85px;
+    min-width: 235px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.catalyst-text {
+    font-family: 'Barlow', sans-serif;
+    background-color: #1a1a1a;
+    max-width: 834px;
+    padding: 32px;
+    color: #F9EFEC;
+    margin: 0 auto;
+}
+
+.catalyst-text h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.catalyst-text p {
+    margin-bottom: 24px;
+}
+
+.catalyst-block__1,
+.catalyst-block__2,
+.catalyst-block__3,
+.catalyst-block__4 {
+    margin-bottom: 24px;
+}
+
+.catalyst-list {
+    list-style: none;
+}
+
+.catalyst-list li {
+    padding-left: 26px;
+    margin-bottom: 12px;
+    background-image: url(../img/catalyst-list.png);
+    background-repeat: no-repeat;
+    line-height: 1.5;
+    min-height: 30px;
+}
