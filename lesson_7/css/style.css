@@ -1,0 +1,309 @@
+.header p {
+    font-size: 52px;
+    text-align: center;
+    text-shadow: 5px 2px 2px #9f8989bf;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer a {
+    padding: 15px;
+    background-color: rgba(172, 137, 172, 0.718);
+    box-shadow: 2px 2px 7px 3px rgba(217, 122, 49, 0.591);
+    border-radius: 12px;
+}
+
+.footer a:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 4px 2px #5750b1bf;
+}
+
+.links-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.links-container a:not(:last-child) {
+    margin-right: 15px;
+}
+
+.main-link {
+    padding: 15px;
+    border: 1px solid black;
+    background-color: rgba(182, 150, 112, 0.799);
+    border-radius: 17px;
+}
+
+.card-hover:hover {
+    text-decoration: underline;
+    color: ghostwhite;
+}
+
+.card-active:active {
+    text-decoration: underline;
+    color: ghostwhite;
+}
+
+.card-visited:visited {
+    color: rgb(221, 40, 20);
+}
+
+.card-focus:focus {
+    text-decoration: underline;
+    color: ghostwhite;
+    border: 2px solid green;
+    font-size: 20px;
+}
+
+.target-block {
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    margin-bottom: 15px;
+}
+
+.target-block:target {
+    opacity: 1;
+    visibility: visible;
+    border: 2px solid yellow;
+
+}
+
+.close-button {
+    padding: 15px;
+    background-color: plum;
+    border-radius: 17px;
+}
+
+.text {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.block-1 {
+    background-color: rgb(211, 196, 196);
+}
+
+.block-1 p {
+    border-top: 1px solid black;
+}
+
+.block-1 p:not(:last-child) {
+    margin-bottom: 15px;
+} 
+
+.block-1 p:first-child {
+    color: rgb(129, 191, 4);
+}
+
+.block-1 p:nth-child(even) {
+    color: rgb(25, 28, 186);
+}
+
+.block-1 p:last-of-type {
+    color: rgba(255, 68, 68, 0.686);
+}
+
+.block-1 p:nth-child(3) {
+    color: darkviolet;
+}
+
+.block-1:has(span) {
+    color: coral;
+}
+
+.block-2 p::before {
+    content: 'Add before';
+    color: rgb(136, 136, 4);
+    margin-right: 10px;
+    text-shadow: 2px  1px 2px #a00505;
+}
+
+.block-2 p::after {
+    content: 'Add after';
+    color: rgb(136, 136, 4);
+    margin-left: 10px;
+    text-shadow: 2px  1px 2px #a00505;
+}
+
+.homework {
+    padding: 15px;
+}
+
+.homework-agrolink {
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 15px;
+}
+
+h1::before {
+    display: block;
+    content: '';
+    border-radius: 2px;
+    width: 48%;
+    height: 4px;
+    background: linear-gradient(90deg, #12ff46 0%, #000 100%);
+    margin-bottom: 17px;
+}
+
+h1 {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: -1.26px;
+    color: #131313;
+    text-shadow: 0 4px 4px  rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+
+h1 span {
+   font-weight: 700; 
+   font-size: 50px;
+   letter-spacing: -1.26px;
+   color: #1AAF5B;
+}
+
+.homework-agrolink p {
+    max-width: 460px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+    color: #000000;
+    margin-bottom: 58px;
+    opacity: 0.6;
+}
+
+
+
+
+.agrolink-button {
+    border-radius: 0 18px 0 0;
+    background-color: #1AAF5B;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.43px;
+    padding: 25px 40px;
+    min-width: 209px;
+}
+
+.agrolink-button::after {
+    display: inline-block;
+    content: '';
+    background-image: url(../img/agrolin-arrow.svg);
+    color: #FFFFFF;
+    width: 20px;
+    height: 10px;
+    margin-left: 18px;
+}
+
+.agrolink-button:hover {
+    box-shadow: 2px 2px 2px 4px #012f0a;
+} 
+
+.game-field {
+    width: 700px;
+    height: 500px;
+    background-color: #eee;
+    border: 2px solid #000;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 0;
+}
+
+ .game-field div:not(:first-child, :last-child) {
+    opacity: 0;
+    background-color: #a00505;
+    pointer-events: none;
+}
+
+.game-field div {
+    font-size: 16px;
+}
+
+.game-field div:hover + div{ 
+    opacity: 1;
+    pointer-events: auto;
+    
+} 
+
+.game-field div:hover {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.start {
+    text-transform: uppercase;
+    opacity: 1;
+    pointer-events: auto;
+    display: inline-block;
+}
+
+.game-field div:nth-child(2) {
+    width: 220px;
+    height: 50px;
+}
+
+.game-field div:nth-child(2):hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.game-field div:nth-child(3) {
+    margin-top: -50px;
+    margin-left: 200px;
+    width: 50px;
+    height: 200px;
+   
+}
+
+.game-field div:nth-child(3):hover {
+    opacity: 1;
+} 
+
+.game-field div:nth-child(4) {
+    margin-left: 200px;
+    width: 250px;
+    height: 50px;
+    
+}
+
+.game-field div:nth-child(4):hover {
+    opacity: 1;
+} 
+
+.game-field div:nth-child(5) {
+    margin-top: -50px;
+    margin-left: 450px;
+    width: 50px;
+    height: 200px;
+    
+}
+
+.game-field div:nth-child(5):hover {
+    opacity: 1;
+} 
+
+.game-field div:nth-child(6) {
+    margin-left: 450px;
+    width: 150px;
+    height: 50px; 
+    
+}
+
+.game-field div:nth-child(6):hover {
+    opacity: 1;
+} 
+
+.finish {
+    margin-top: -25px;
+    margin-left: 610px;
+    text-transform: uppercase;
+}
+
+
