@@ -160,7 +160,7 @@ h2 {
     min-height: 1280px;
     margin: 0 auto;
     display: block;
-    background-image: url(/img/stars.webp);
+    background-image: url(../img/stars.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
