@@ -1,0 +1,182 @@
+.wrapper {
+    min-height: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.blocks {
+    max-width: 1000px;
+}
+
+.page {
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    color: rgb(170, 204, 126);
+    text-shadow: 2px 2px 2px #180e0e;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 50; 
+} 
+
+.footer {
+    text-align: center;
+}
+
+.button {
+    padding: 15px;
+    background-color: #91dfa8;
+    border-radius: 15px;
+    transition: all 0.7s ease;
+}
+
+.button:hover {
+    color:  #1a2a3a;
+    transform: translateY(-5px);
+    text-decoration: underline;
+    background-color: #45c3f1;
+    box-shadow: 3px 2px 1px 1px #1a2a3a;
+}
+
+.homework {
+    position: relative;
+}
+
+.rocket__body {
+    position: absolute;
+    top: 580px;
+    left: 450px;
+    z-index: 2;
+    width: 200px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 47% 47% 15% 15%;
+    background: linear-gradient(90deg, #757575 0%, #e0e0e0 50%, #757575 100%);
+}
+
+.rocket__window {
+    position: absolute;
+    top: 750px;
+    left: 500px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    outline: 15px solid red;
+    background: radial-gradient(circle at 30% 30%, #add8e6, #5fb1e4 70%);
+    box-shadow: inset 0 0 15px rgba(0,0, 0, 0.2);
+    z-index: 2;
+}
+
+.rocket__window::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 40%;
+    height: 20%;
+    rotate: -35deg;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+   
+}
+
+.rocket__window:hover {
+    background: radial-gradient(circle at 30% 30%, #fff0a1, #c5b63e 70%);
+}
+
+
+.rocket__finger {
+    width: 100px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: red;
+}
+
+.rocket__finger--left {
+    position: absolute;
+    top: 920px;
+    left: 350px;
+    z-index: 1;
+    border-radius: 0% 0% 0% 100%;
+    transform: skewY(-20deg);
+    rotate: 75deg;
+}
+
+.rocket__finger--right {
+    position: absolute;
+    top: 920px;
+    left: 650px;
+    z-index: 1;
+    border-radius: 0% 0% 100% 0%;
+    transform: skewY(20deg);
+    rotate: -75deg;
+}
+
+.rocket__engine {
+    position: absolute;
+    top: 1078px; 
+    left: 500px; 
+    width: 100px;
+    height: 30px;
+    background-color: #333;
+    border: 1px solid black;
+    border-radius: 0 0 10px 10px;
+}
+
+.rocket {
+    position: relative;
+    width: 1280px;
+    height: 1280px;
+    margin: 0 auto;
+    background-image: url(../img/stars.webp);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.rocket__wrap {
+    position: absolute;
+    inset: 0;                    
+    animation: rocket-launch 7s linear  forwards;
+}
+
+@keyframes rocket-launch {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    10% {
+        transform: translateY(0) rotate(-1.5deg);
+    }
+    20% {
+        transform: translateY(0) rotate(1.5deg);
+    }
+    30% {
+        transform: translateY(0) rotate(-1.5deg);
+    }
+    100% {
+        transform: translateY(-1500px) rotate(0deg);
+    }
+   
+}
+
+.rocket__engine::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 140px;
+    background: linear-gradient(to bottom, #ffff00, #ff8800, #ff4400, transparent);
+    border-radius: 50% 50% 0 0;
+    animation: flame-pulse 0.12s infinite alternate ease-in-out;
+    box-shadow: 0 0 35px #ffdd00;
+}
+
+ @keyframes flame-pulse {
+    from { height: 115px; width: 55px; opacity: 0.9; }
+    to   { height: 165px; width: 75px; opacity: 1; }
+} 
