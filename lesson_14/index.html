@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <title>Lesson 14</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header id="top" class="header">
+           <h1>Заняття 14 Форми</h1>
+        </header>
+
+        <main class="page">
+            <div class="page__container">
+
+                <form action="#" method="post" enctype="multipart/form-data">
+                   <div class="form__group">
+                        <label for="name" class="form__label">Your name</label>
+                        <input id="name" name="form[]" type="text" placeholder="Abc" required autocomplete="off"   class="form__input">
+                   </div>
+
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email address</label>
+                        <input id="email" name="form[]"  type="email" placeholder="Abc@def.com" required     class="form__input">
+                   </div>
+
+                     <div class="form__group">
+                        <label for="subject" class="form__label">Subject</label>
+                        <input id="subject" name="form[]"  type="text" placeholder="This is an optional" required     class="form__input">
+                   </div>
+
+                   <div class="form__group">
+                        <label for="textarea" class="form__label">Message</label>
+                        <textarea class="form__textarea" name="form[]" placeholder="Hi! i’d like to ask about" id="textarea"></textarea>
+                   </div>
+
+                   <button class="form__button" type="submit">Submit</button>
+                  
+                </form>
+
+
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="form__options">
+                        
+
+                      <div class="form__size size">
+                        <h2 class="form__title">Size</h2>
+
+                        <div class="size__line">
+                        <label class="size__label" for="size-l">
+                            <input class="size__input" type="radio" id="size-l" name="form[size]" value="L" checked>
+                            <span class="size__text">L</span>
+                        </label>
+                        
+
+                        <label class="size__label" for="size-xl" >
+                            <input class="size__input" type="radio" id="size-xl" name="form[size]" value="XL">
+                            <span class="size__text">XL</span>
+                        </label>
+
+                        <label class="size__label" for="size-xs" >
+                            <input class="size__input" type="radio" id="size-xs" name="form[size]" value="XS">
+                            <span class="size__text">XS</span>
+                        </label>
+
+                        </div>
+
+                        <h2 class="form__title">Color</h2>
+
+                          <div class="color__line">
+                        <label class="color__label color__label--purple" for="color-purple" >
+                            <input class="color__input" type="radio" id="color-purple" name="form[color]" value="purple" checked>
+                            
+                        </label>
+
+
+                        <label class="color__label color__label--black" for="color-black" >
+                            <input class="color__input" type="radio" id="color-black" name="form[color]" value="black" >
+                            
+                        </label>
+
+
+                         <label class="color__label color__label--gold" for="color-gold" >
+                            <input class="color__input" type="radio" id="color-gold" name="form[color]" value="gold" >
+                            
+                        </label>
+
+                        </div>
+                    
+                    
+                    </div>
+                
+                      </div> 
+                      </form> 
+            </div>
+        </main>
+
+        <footer class="footer">
+            <a class="footer__link" href="#top">На головну</a>
+        </footer>
+    </div>
+</body>
+</html>
