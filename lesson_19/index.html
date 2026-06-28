@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 19</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header id="top" class="header">
+            <h1 class="header__title">Заняття 19 Відносні одиниці та інші корисні речі</h1>
+        </header>
+
+        <main class="page">
+           
+            <div class="hero">
+                <div class="hero__container">
+                    <article class="hero__card recipe-card">
+                        <a href="#" class="recipe-card__badge">
+                            <span>Hot Recipes</span>
+                        </a>
+
+                        <h2 class="recipe-card__title">
+                            Spicy delicious chicken wings
+                        </h2>
+
+                        <p class="recipe-card__text">
+                            Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim 
+                        </p>
+
+                        <div class="recipe-card__meta meta-item">
+                            <span class="meta-item meta-item--time">
+                                30 Minutes
+                            </span>
+
+                            <span class="meta-item meta-item--ingredient">
+                                Chicken
+                            </span>
+                        </div>
+
+                        <div class="recipe-card__footer">
+                            <figure class="recipe-card__author author">
+                                <img src="img/author-foto.webp" alt="John Smith">
+                                <figcaption class="author-info">
+                                    <span class="author-info__name">John Smith</span>
+                                    <time datetime="2022-03-15" class="author-info__time">15 March 2022</time>
+                                </figcaption>
+                            </figure>
+
+                            <a href="#" class="recipe-card__btn">
+                                <span>View Recipes</span>
+                            </a>
+                        </div>
+
+                        <img src="img/icons/badge.svg" alt="Handpicked Recipes" class="recipe-card__stamp">
+
+                    </article>
+
+                    <div class="article-card image-card">
+                        
+                    </div>
+                </div>
+
+            </div>
+
+           <section class="categories-section">
+                <h2 class="categories-title">
+                    Categories
+                </h2>
+                <a href="#" class="categories-link">View All Categories</a>
+
+                <div class="categories-grid">
+                     <button type="button" class="category-card card-breakfast">
+                        <img class="category-icon" src="img/categories/breakfast.webp" alt="breakfast">
+                         <span class="category-name">
+                        Breakfast
+                         </span>
+                     </button>
+
+                    <button type="button" class="category-card card-vegan">
+                        <img class="category-icon" src="img/categories/vegan.webp" alt="vegan">
+                         <span class="category-name">
+                        Vegan
+                        </span>
+                    </button>
+
+                    <button type="button" class="category-card card-meat">
+                        <img class="category-icon" src="img/categories/meat.webp" alt="meat">
+                         <span class="category-name">
+                        Meat
+                        </span>
+                    </button>
+                    
+                    <button type="button" class="category-card card-dessert">
+                        <img class="category-icon" src="img/categories/dessert.webp" alt="dessert">
+                         <span class="category-name">
+                        Dessert
+                        </span>
+                    </button>
+
+                    <button type="button" class="category-card card-lunch">
+                        <img class="category-icon" src="img/categories/lunch.webp" alt="lunch">
+                         <span class="category-name">
+                        Lunch
+                        </span>
+                    </button>
+
+                    <button type="button" class="category-card card-chocolate">
+                        <img class="category-icon" src="img/categories/chocolate.webp" alt="chocolate">
+                         <span class="category-name">
+                        Chocolate
+                        </span>
+                    </button>
+                </div>
+
+           </section>
+
+           <!-- vstavka -->
+           <section class="products">
+
+                <div class="products__container ">
+                    <div class="products__header-block header-block header-block--center">
+                        <h2 class="header-block__title">Simple and tasty recipes</h2>
+                        <div class="header-block__text">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim 
+                            </p>
+                        
+                        </div>
+                    </div>  
+                    <div class="products__items">
+                        <div class="products__item item-product">
+                            <div class="item-product__header">
+                                <a href="#" class ="item-product__link-image">
+                                    <img src="img/products/cheeseburger.webp" class="item-product__image" alt="cheesburger">
+                                </a>
+                                <a href="#" class="item-product__favorite item-product__favorite--active">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.5022 3.00001C15.6291 2.99851 14.7677 3.20077 13.9865 3.59072C13.2052 3.98066 12.5258 4.54752 12.0022 5.24621C11.293 4.30266 10.3051 3.606 9.17823 3.25482C8.05134 2.90365 6.84256 2.91573 5.72291 3.28936C4.60327 3.663 3.62948 4.37926 2.93932 5.3368C2.24916 6.29434 1.8776 7.44467 1.8772 8.62501C1.8772 15.3621 11.2373 20.6813 11.6357 20.9044C11.7477 20.9671 11.8739 21 12.0022 21C12.1305 21 12.2567 20.9671 12.3687 20.9044C14.0902 19.8961 15.7059 18.7173 17.1914 17.3856C20.4665 14.438 22.1272 11.4905 22.1272 8.62501C22.1255 7.13368 21.5323 5.70393 20.4778 4.6494C19.4233 3.59487 17.9935 3.0017 16.5022 3.00001Z" fill="#DBE2E5"/>
+                                        </svg>
+                                </a>
+                            </div>
+                            <div class="item-product__body">
+                                <a href="#" class="item-product__link-title">
+                                    <h2 class="item-product__title">
+                                        Big and Juicy Wagyu Beef Cheeseburger
+                                    </h2>
+                                   
+                                </a>
+
+                                 <div class="item-product__options options-item-product">
+                                        <div class="options-item-product__item options-item-product__item--timer">30 Minutes</div>
+                                        <div class="options-item-product__item options-item-product__item--snack">Snack</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="products__item item-product">
+                                <div class="item-product__header">
+                                    <a href="#" class ="item-product__link-image">
+                                        <img src="img/products/salmon.webp" class="item-product__image" alt="salmon">
+                                    </a>
+                                    <a href="#" class="item-product__favorite ">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.5022 3.00001C15.6291 2.99851 14.7677 3.20077 13.9865 3.59072C13.2052 3.98066 12.5258 4.54752 12.0022 5.24621C11.293 4.30266 10.3051 3.606 9.17823 3.25482C8.05134 2.90365 6.84256 2.91573 5.72291 3.28936C4.60327 3.663 3.62948 4.37926 2.93932 5.3368C2.24916 6.29434 1.8776 7.44467 1.8772 8.62501C1.8772 15.3621 11.2373 20.6813 11.6357 20.9044C11.7477 20.9671 11.8739 21 12.0022 21C12.1305 21 12.2567 20.9671 12.3687 20.9044C14.0902 19.8961 15.7059 18.7173 17.1914 17.3856C20.4665 14.438 22.1272 11.4905 22.1272 8.62501C22.1255 7.13368 21.5323 5.70393 20.4778 4.6494C19.4233 3.59487 17.9935 3.0017 16.5022 3.00001Z" fill="#DBE2E5"/>
+                                            </svg>
+                                    </a>
+                                </div>
+                                <div class="item-product__body">
+                                    <a href="#" class="item-product__link-title">
+                                        <h2 class="item-product__title">
+                                            Strawberry Oatmeal Pancake with Honey Syrup
+                                        </h2>
+                                    
+                                    </a>
+
+                                    <div class="item-product__options options-item-product">
+                                            <div class="options-item-product__item options-item-product__item--timer">30 Minutes</div>
+                                            <div class="options-item-product__item options-item-product__item--snack">Snack</div>
+                                    </div>
+                                </div>
+
+
+                            
+                        
+                        </div>
+
+                        <div class="products__item item-product">
+                                <div class="item-product__header">
+                                    <a href="#" class ="item-product__link-image">
+                                        <img src="img/products/pancake.webp" class="item-product__image" alt="pancake">
+                                    </a>
+                                    <a href="#" class="item-product__favorite ">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.5022 3.00001C15.6291 2.99851 14.7677 3.20077 13.9865 3.59072C13.2052 3.98066 12.5258 4.54752 12.0022 5.24621C11.293 4.30266 10.3051 3.606 9.17823 3.25482C8.05134 2.90365 6.84256 2.91573 5.72291 3.28936C4.60327 3.663 3.62948 4.37926 2.93932 5.3368C2.24916 6.29434 1.8776 7.44467 1.8772 8.62501C1.8772 15.3621 11.2373 20.6813 11.6357 20.9044C11.7477 20.9671 11.8739 21 12.0022 21C12.1305 21 12.2567 20.9671 12.3687 20.9044C14.0902 19.8961 15.7059 18.7173 17.1914 17.3856C20.4665 14.438 22.1272 11.4905 22.1272 8.62501C22.1255 7.13368 21.5323 5.70393 20.4778 4.6494C19.4233 3.59487 17.9935 3.0017 16.5022 3.00001Z" fill="#DBE2E5"/>
+                                            </svg>
+                                    </a>
+                                </div>
+                                <div class="item-product__body">
+                                    <a href="#" class="item-product__link-title">
+                                        <h2 class="item-product__title">
+                                            Fresh Lime Roasted Salmon with Ginger Sauce
+                                        </h2>
+                                    
+                                    </a>
+
+                                    <div class="item-product__options options-item-product">
+                                            <div class="options-item-product__item options-item-product__item--timer">30 Minutes</div>
+                                            <div class="options-item-product__item options-item-product__item--snack">Snack</div>
+                                        </div>
+                                </div>
+
+                        
+                        </div>
+
+                        <div class="products__item item-product">
+                                <div class="item-product__header">
+                                    <a href="#" class ="item-product__link-image">
+                                        <img src="img/products/salad.webp" class="item-product__image" alt="salad">
+                                    </a>
+                                    <a href="#" class="item-product__favorite item-product__favorite--active ">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.5022 3.00001C15.6291 2.99851 14.7677 3.20077 13.9865 3.59072C13.2052 3.98066 12.5258 4.54752 12.0022 5.24621C11.293 4.30266 10.3051 3.606 9.17823 3.25482C8.05134 2.90365 6.84256 2.91573 5.72291 3.28936C4.60327 3.663 3.62948 4.37926 2.93932 5.3368C2.24916 6.29434 1.8776 7.44467 1.8772 8.62501C1.8772 15.3621 11.2373 20.6813 11.6357 20.9044C11.7477 20.9671 11.8739 21 12.0022 21C12.1305 21 12.2567 20.9671 12.3687 20.9044C14.0902 19.8961 15.7059 18.7173 17.1914 17.3856C20.4665 14.438 22.1272 11.4905 22.1272 8.62501C22.1255 7.13368 21.5323 5.70393 20.4778 4.6494C19.4233 3.59487 17.9935 3.0017 16.5022 3.00001Z" fill="#DBE2E5"/>
+                                            </svg>
+                                    </a>
+                                </div>
+                                <div class="item-product__body">
+                                    <a href="#" class="item-product__link-title">
+                                        <h2 class="item-product__title">
+                                            Fresh and Healthy Mixed Mayonnaise Salad
+                                        </h2>
+                                    
+                                    </a>
+
+                                    <div class="item-product__options options-item-product">
+                                            <div class="options-item-product__item options-item-product__item--timer">30 Minutes</div>
+                                            <div class="options-item-product__item options-item-product__item--snack">Snack</div>
+                                        </div>
+                                </div>
+
+                        
+                        </div>
+
+
+
+                        <div class="products__item item-product">
+                            <div class="item-product__header">
+                                <a href="#" class ="item-product__link-image">
+                                    <img src="img/products/meatballs.webp" class="item-product__image" alt="meatballs">
+                                </a>
+                                <a href="#" class="item-product__favorite ">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.5022 3.00001C15.6291 2.99851 14.7677 3.20077 13.9865 3.59072C13.2052 3.98066 12.5258 4.54752 12.0022 5.24621C11.293 4.30266 10.3051 3.606 9.17823 3.25482C8.05134 2.90365 6.84256 2.91573 5.72291 3.28936C4.60327 3.663 3.62948 4.37926 2.93932 5.3368C2.24916 6.29434 1.8776 7.44467 1.8772 8.62501C1.8772 15.3621 11.2373 20.6813 11.6357 20.9044C11.7477 20.9671 11.8739 21 12.0022 21C12.1305 21 12.2567 20.9671 12.3687 20.9044C14.0902 19.8961 15.7059 18.7173 17.1914 17.3856C20.4665 14.438 22.1272 11.4905 22.1272 8.62501C22.1255 7.13368 21.5323 5.70393 20.4778 4.6494C19.4233 3.59487 17.9935 3.0017 16.5022 3.00001Z" fill="#DBE2E5"/>
+                                        </svg>
+                                </a>
+                            </div>
+                            <div class="item-product__body">
+                                <a href="#" class="item-product__link-title">
+                                    <h2 class="item-product__title">
+                                        Chicken Meatballs with Cream Cheese
+                                    </h2>
+                                   
+                                </a>
+
+                                 <div class="item-product__options options-item-product">
+                                        <div class="options-item-product__item options-item-product__item--timer">30 Minutes</div>
+                                        <div class="options-item-product__item options-item-product__item--snack">Snack</div>
+                                    </div>
+                            </div>
+
+
+                            
+                        
+                        </div>
+
+
+                        <div class="products__item item-product item-product--ads">
+                         
+                            <a href="#" class ="item-product__link-image item-product__link-image--ads">
+                                <img src="img/products/foodieland.webp" class="item-product__image item-product__image--ads" alt="foodlends">
+                            </a>
+          
+
+                        </div>
+
+                        <div class="products__item item-product">
+                                <div class="item-product__header">
+                                    <a href="#" class ="item-product__link-image">
+                                        <img src="img/products/orange.webp" class="item-product__image" alt="orange pancake">
+                                    </a>
+                                    <a href="#" class="item-product__favorite item-product__favorite--active">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.5022 3.00001C15.6291 2.99851 14.7677 3.20077 13.9865 3.59072C13.2052 3.98066 12.5258 4.54752 12.0022 5.24621C11.293 4.30266 10.3051 3.606 9.17823 3.25482C8.05134 2.90365 6.84256 2.91573 5.72291 3.28936C4.60327 3.663 3.62948 4.37926 2.93932 5.3368C2.24916 6.29434 1.8776 7.44467 1.8772 8.62501C1.8772 15.3621 11.2373 20.6813 11.6357 20.9044C11.7477 20.9671 11.8739 21 12.0022 21C12.1305 21 12.2567 20.9671 12.3687 20.9044C14.0902 19.8961 15.7059 18.7173 17.1914 17.3856C20.4665 14.438 22.1272 11.4905 22.1272 8.62501C22.1255 7.13368 21.5323 5.70393 20.4778 4.6494C19.4233 3.59487 17.9935 3.0017 16.5022 3.00001Z" fill="#DBE2E5"/>
+                                            </svg>
+                                    </a>
+                                </div>
+                                <div class="item-product__body">
+                                    <a href="#" class="item-product__link-title">
+                                        <h2 class="item-product__title">
+                                            Fruity Pancake with Orange & Blueberry
+                                        </h2>
+                                    
+                                    </a>
+
+                                    <div class="item-product__options options-item-product">
+                                            <div class="options-item-product__item options-item-product__item--timer">30 Minutes</div>
+                                            <div class="options-item-product__item options-item-product__item--snack">Snack</div>
+                                    </div>
+                                </div>
+                        </div>
+
+                        
+                        <div class="products__item item-product">
+                                <div class="item-product__header">
+                                    <a href="#" class ="item-product__link-image">
+                                        <img src="img/products/chicken.webp" class="item-product__image" alt="chicken">
+                                    </a>
+                                    <a href="#" class="item-product__favorite">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.5022 3.00001C15.6291 2.99851 14.7677 3.20077 13.9865 3.59072C13.2052 3.98066 12.5258 4.54752 12.0022 5.24621C11.293 4.30266 10.3051 3.606 9.17823 3.25482C8.05134 2.90365 6.84256 2.91573 5.72291 3.28936C4.60327 3.663 3.62948 4.37926 2.93932 5.3368C2.24916 6.29434 1.8776 7.44467 1.8772 8.62501C1.8772 15.3621 11.2373 20.6813 11.6357 20.9044C11.7477 20.9671 11.8739 21 12.0022 21C12.1305 21 12.2567 20.9671 12.3687 20.9044C14.0902 19.8961 15.7059 18.7173 17.1914 17.3856C20.4665 14.438 22.1272 11.4905 22.1272 8.62501C22.1255 7.13368 21.5323 5.70393 20.4778 4.6494C19.4233 3.59487 17.9935 3.0017 16.5022 3.00001Z" fill="#DBE2E5"/>
+                                            </svg>
+                                    </a>
+                                </div>
+                                <div class="item-product__body">
+                                    <a href="#" class="item-product__link-title">
+                                        <h2 class="item-product__title">
+                                            The Best Easy One Pot Chicken and Rice
+                                        </h2>
+                                    
+                                    </a>
+
+                                    <div class="item-product__options options-item-product">
+                                            <div class="options-item-product__item options-item-product__item--timer">30 Minutes</div>
+                                            <div class="options-item-product__item options-item-product__item--snack">Snack</div>
+                                    </div>
+                                </div>
+                        </div>
+
+
+                        <div class="products__item item-product">
+                                <div class="item-product__header">
+                                    <a href="#" class ="item-product__link-image">
+                                        <img src="img/products/pasta.webp" class="item-product__image" alt="pasta">
+                                    </a>
+                                    <a href="#" class="item-product__favorite">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.5022 3.00001C15.6291 2.99851 14.7677 3.20077 13.9865 3.59072C13.2052 3.98066 12.5258 4.54752 12.0022 5.24621C11.293 4.30266 10.3051 3.606 9.17823 3.25482C8.05134 2.90365 6.84256 2.91573 5.72291 3.28936C4.60327 3.663 3.62948 4.37926 2.93932 5.3368C2.24916 6.29434 1.8776 7.44467 1.8772 8.62501C1.8772 15.3621 11.2373 20.6813 11.6357 20.9044C11.7477 20.9671 11.8739 21 12.0022 21C12.1305 21 12.2567 20.9671 12.3687 20.9044C14.0902 19.8961 15.7059 18.7173 17.1914 17.3856C20.4665 14.438 22.1272 11.4905 22.1272 8.62501C22.1255 7.13368 21.5323 5.70393 20.4778 4.6494C19.4233 3.59487 17.9935 3.0017 16.5022 3.00001Z" fill="#DBE2E5"/>
+                                            </svg>
+                                    </a>
+                                </div>
+                                <div class="item-product__body">
+                                    <a href="#" class="item-product__link-title">
+                                        <h2 class="item-product__title">
+                                            The Creamiest Creamy Chicken and Bacon Pasta
+                                        </h2>
+                                    
+                                    </a>
+
+                                    <div class="item-product__options options-item-product">
+                                            <div class="options-item-product__item options-item-product__item--timer">30 Minutes</div>
+                                            <div class="options-item-product__item options-item-product__item--snack">Snack</div>
+                                    </div>
+                                </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+           </section>
+                
+
+
+           <!-- end vstavka -->
+           
+        <!-- promo -->
+
+           <section class="promo">
+            <div class="promo__content">
+                <h2 class="promo__title">
+                   Everyone can be a 
+                   chef in their own kitchen
+                </h2>
+                <p class="promo__text">
+                    Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim 
+                </p>
+                <button type="button" class="promo__btn">Learn More</button>
+
+            </div>
+
+            <div class="promo__media">
+
+                <div class="promo__bg-fon">
+
+                    <img src="img/happy-chef.webp" alt="Chef" class="promo__chef-img">
+
+                    <img src="img/categories/meat.webp" alt="Meat" class="promo__decor promo__decor--meat">
+
+                    <img src="img/tomato.webp" alt="Tomato" class="promo__decor promo__decor--tomato">
+
+                    <img src="img/onion.webp" alt="Onion" class="promo__decor promo__decor--onion">
+
+                    <img src="img/categories/vegan.webp" alt="Vegan" class="promo__decor promo__decor--vegan">
+                </div>
+               
+            </div>
+           </section>
+        <!-- end promo -->
+         
+
+        <!-- section instagram -->
+           <section class="instagram">
+            <div class="instagram__container">
+                <h2 class="instagram__title">
+                    Check out @foodieland on Instagram
+                </h2>
+                <p class="instagram__text">
+                    Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim 
+                </p>
+
+                <div class="instagram__grid grid-items">
+                    <article class="grid-items__card instagram-card">
+                        
+                        <div class="instagram-card__header">
+                            <div class="instagram-card__user">
+                                <img src="img/foodieland.svg" alt="foodieland" class="instagram-card__logo">
+                            
+                                <div class="instagram-card__meta">
+                                    <h3 class="instagram-card__username">
+                                        Foodieland.
+                                         <span class="instagram-card__verified"></span>
+                                    </h3>
+                                   
+                                    <p class="instagram-card__location">
+                                        Tokyo, Japan
+                                    </p>
+                                </div>
+                            
+                            </div>
+                            <button type="button" class="instagram-card__more-btn"></button>
+
+                        </div>
+
+                        <a href="#" class="instagram-card__link">
+                             <figure class="instagram-card__media">
+                            <img src="img/instagram/inst-salad.webp" alt="Salad mix in a bowl" class="instagram-card__img">
+                            <figcaption class="instagram-card__counter">1/3</figcaption>
+                        </figure>
+                        </a>
+
+                       
+
+                     <div class="instagram-card__footer">
+                            <div class="instagram-card__toolbar">
+                        <div class="instagram-card__actions">
+                        <button class="instagram-card__btn-action instagram-card__btn-action--like" aria-label="Like"></button>
+                        <button class="instagram-card__btn-action instagram-card__btn-action--comment" aria-label="Comment"></button>
+                        <button class="instagram-card__btn-action instagram-card__btn-action--share" aria-label="Share"></button>
+                        </div>
+
+
+                         <div class="instagram-card__pagination">
+                        <span class="instagram-card__dot instagram-card__dot--active"></span>
+                        <span class="instagram-card__dot"></span>
+                        <span class="instagram-card__dot"></span>
+                        </div>
+
+                        <button class="instagram-card__btn-action instagram-card__btn-action--save" aria-label="Save"></button>
+                    </div>
+
+
+                     <div class="instagram-card__body">
+                        <p class="instagram-card__likes">
+                        Liked by <a href="#" class="instagram-card__like-author">craig_love</a> and <strong class="instagram-card__like-count">44,686</strong>
+                        </p>
+                        <p class="instagram-card__desc">
+                        <span class="instagram-card__author">Foodieland.</span> 
+                        The vegetables dishes need to have certain vitamin for those people
+                        </p>
+                        <time datetime="2026-09-19" class="instagram-card__date">September 19</time>
+                    </div>
+                    </div>
+                    </article>
+
+
+
+                    <article class="grid-items__card instagram-card">
+                        
+                        <div class="instagram-card__header">
+                            <div class="instagram-card__user">
+                                <img src="img/foodieland.svg" alt="foodieland" class="instagram-card__logo">
+                            
+                                <div class="instagram-card__meta">
+                                    <h3 class="instagram-card__username">
+                                        Foodieland.
+                                         <span class="instagram-card__verified"></span>
+                                    </h3>
+                                   
+                                    <p class="instagram-card__location">
+                                        Tokyo, Japan
+                                    </p>
+                                </div>
+                            
+                            </div>
+                            <button type="button" class="instagram-card__more-btn"></button>
+
+                        </div>
+
+                        <a href="#" class="instagram-card__link">
+                             <figure class="instagram-card__media">
+                            <img src="img/instagram/inst-pancake.webp" alt="Pancakes with chocolate syrup and strawberries on a saucer" class="instagram-card__img">
+                            <figcaption class="instagram-card__counter">1/3</figcaption>
+                        </figure>
+                        </a>
+
+                       
+
+                     <div class="instagram-card__footer">
+                            <div class="instagram-card__toolbar">
+                        <div class="instagram-card__actions">
+                        <button class="instagram-card__btn-action instagram-card__btn-action--like" aria-label="Like"></button>
+                        <button class="instagram-card__btn-action instagram-card__btn-action--comment" aria-label="Comment"></button>
+                        <button class="instagram-card__btn-action instagram-card__btn-action--share" aria-label="Share"></button>
+                        </div>
+
+
+                         <div class="instagram-card__pagination">
+                        <span class="instagram-card__dot instagram-card__dot--active"></span>
+                        <span class="instagram-card__dot"></span>
+                        <span class="instagram-card__dot"></span>
+                        </div>
+
+                        <button class="instagram-card__btn-action instagram-card__btn-action--save" aria-label="Save"></button>
+                    </div>
+
+
+                     <div class="instagram-card__body">
+                        <p class="instagram-card__likes">
+                        Liked by <a href="#" class="instagram-card__like-author">craig_love</a> and <strong class="instagram-card__like-count">44,686</strong>
+                        </p>
+                        <p class="instagram-card__desc">
+                        <span class="instagram-card__author">Foodieland.</span> 
+                        Sweet food can bring someon into happiness as long as they don’t eat to much
+                        </p>
+                        <time datetime="2026-09-19" class="instagram-card__date">September 19</time>
+                    </div>
+                    </div>
+                    </article>
+
+
+                    <article class="grid-items__card instagram-card">
+                        
+                        <div class="instagram-card__header">
+                            <div class="instagram-card__user">
+                                <img src="img/foodieland.svg" alt="foodieland" class="instagram-card__logo">
+                            
+                                <div class="instagram-card__meta">
+                                    <h3 class="instagram-card__username">
+                                        Foodieland.
+                                         <span class="instagram-card__verified"></span>
+                                    </h3>
+                                   
+                                    <p class="instagram-card__location">
+                                        Tokyo, Japan
+                                    </p>
+                                </div>
+                            
+                            </div>
+                            <button type="button" class="instagram-card__more-btn"></button>
+
+                        </div>
+
+                        <a href="#" class="instagram-card__link">
+                             <figure class="instagram-card__media">
+                            <img src="img/instagram/inst-onion.webp" alt="Onions and seasoning on a cutting board " class="instagram-card__img">
+                            <figcaption class="instagram-card__counter">1/3</figcaption>
+                        </figure>
+                        </a>
+
+                       
+
+                     <div class="instagram-card__footer">
+                            <div class="instagram-card__toolbar">
+                        <div class="instagram-card__actions">
+                        <button class="instagram-card__btn-action instagram-card__btn-action--like" aria-label="Like"></button>
+                        <button class="instagram-card__btn-action instagram-card__btn-action--comment" aria-label="Comment"></button>
+                        <button class="instagram-card__btn-action instagram-card__btn-action--share" aria-label="Share"></button>
+                        </div>
+
+
+                         <div class="instagram-card__pagination">
+                        <span class="instagram-card__dot instagram-card__dot--active"></span>
+                        <span class="instagram-card__dot"></span>
+                        <span class="instagram-card__dot"></span>
+                        </div>
+
+                        <button class="instagram-card__btn-action instagram-card__btn-action--save" aria-label="Save"></button>
+                    </div>
+
+
+                     <div class="instagram-card__body">
+                        <p class="instagram-card__likes">
+                        Liked by <a href="#" class="instagram-card__like-author">craig_love</a> and <strong class="instagram-card__like-count">44,686</strong>
+                        </p>
+                        <p class="instagram-card__desc">
+                        <span class="instagram-card__author">Foodieland.</span> 
+                        What are you doing before start cooking? prepare the  tools or ingredients?
+                
+                        </p>
+                        <time datetime="2026-09-19" class="instagram-card__date">September 19</time>
+                    </div>
+                    </div>
+                    </article>
+
+                     <article class="grid-items__card instagram-card">
+                        
+                        <div class="instagram-card__header">
+                            <div class="instagram-card__user">
+                                <img src="img/foodieland.svg" alt="foodieland" class="instagram-card__logo">
+                            
+                                <div class="instagram-card__meta">
+                                    <h3 class="instagram-card__username">
+                                        Foodieland.
+                                         <span class="instagram-card__verified"></span>
+                                    </h3>
+                                   
+                                    <p class="instagram-card__location">
+                                        Tokyo, Japan
+                                    </p>
+                                </div>
+                            
+                            </div>
+                            <button type="button" class="instagram-card__more-btn"></button>
+
+                        </div>
+
+                        <a href="#" class="instagram-card__link">
+
+                              <figure class="instagram-card__media">
+                            <img src="img/instagram/inst-steak.webp" alt="Steak with caramelized vegetables on a platter" class="instagram-card__img">
+                            <figcaption class="instagram-card__counter">1/3</figcaption>
+                        </figure>
+                        </a>
+
+                      
+
+                     <div class="instagram-card__footer">
+                            <div class="instagram-card__toolbar">
+                        <div class="instagram-card__actions">
+                        <button class="instagram-card__btn-action instagram-card__btn-action--like" aria-label="Like"></button>
+                        <button class="instagram-card__btn-action instagram-card__btn-action--comment" aria-label="Comment"></button>
+                        <button class="instagram-card__btn-action instagram-card__btn-action--share" aria-label="Share"></button>
+                        </div>
+
+
+                         <div class="instagram-card__pagination">
+                        <span class="instagram-card__dot instagram-card__dot--active"></span>
+                        <span class="instagram-card__dot"></span>
+                        <span class="instagram-card__dot"></span>
+                        </div>
+
+                        <button class="instagram-card__btn-action instagram-card__btn-action--save" aria-label="Save"></button>
+                    </div>
+
+
+                     <div class="instagram-card__body">
+                        <p class="instagram-card__likes">
+                        Liked by <a href="#" class="instagram-card__like-author">craig_love</a> and <strong class="instagram-card__like-count">44,686</strong>
+                        </p>
+                        <p class="instagram-card__desc">
+                        <span class="instagram-card__author">Foodieland.</span> 
+                        Steak never be wrong, it’s suitable for you who want romantic dinner
+                
+                        </p>
+                        <time datetime="2026-09-19" class="instagram-card__date">September 19</time>
+                    </div>
+                    </div>
+                    </article>
+                </div>
+
+                
+
+                <button type="button" class="instagram__btn">Visit Our Instagram</button>
+            </div>
+           </section>
+        <!-- end section instagram -->
+        </main>
+
+        <footer class="footer">
+            <a href="#top" class="footer__btn">На головну</a>
+        </footer>
+    </div>
+    
+</body>
+</html>

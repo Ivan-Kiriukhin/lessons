@@ -1,0 +1,228 @@
+/* products item */
+.products__container {
+    margin: 0 auto;
+    padding-inline: 0.9375rem;
+    max-width: 81.875rem;
+    margin-bottom: 8.9375rem;
+}
+
+.products__items {
+    /* display: flex; */
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+}
+.products__item {
+    flex: 1 1 21.875rem;
+}
+
+.products__header-block {
+    margin-bottom: 6rem;
+}
+.header-block {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+.header-block--center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-block--center .header-block__text {
+    /* text-wrap: pretty; */
+    max-width: 44.375rem;
+}
+
+.header-block__title {
+    font-size: 3rem;
+    font-weight: 600;
+}
+.header-block__text {
+    line-height: 1.75;
+    opacity: 0.6;
+}
+
+.header-block__text p:not(:last-child) {
+    margin-bottom: 0.9375rem;
+}
+
+.item-product {
+    background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #e7f9fd 100%);
+    padding: 1rem;
+    border-radius: 1.875rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.item-product__header {
+    position: relative;
+}
+.item-product__link-image {
+    display: block;
+    overflow: hidden;
+    border-radius: 1.25rem;
+}
+.item-product__image {
+    width: 100%;
+    height: 100%;
+   
+    object-fit: cover;
+    aspect-ratio: 368 / 250;
+    transition: scale 0.8s;
+}
+
+.item-product__image:not(.item-product__image--ads):hover {
+    scale: 1.05;
+}
+
+.item-product__favorite {
+    position: absolute;
+    right: 1.25rem;
+    top: 1.25rem;
+    border-radius: 50%;
+    width: 3rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    
+}
+
+.item-product__options {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.item-product__favorite svg path {
+    transition: all 0.3s;
+} 
+
+.item-product__favorite:hover svg path {
+    fill: #ff6363;
+    transition: all 0.3s;
+}
+
+.item-product__favorite--active path {
+    fill: #ff6363;
+}
+
+.item-product__body {
+    padding: 1.5rem 0.5rem 1rem 0.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-product__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-wrap: pretty;
+    line-height: 1.33;
+    flex-grow: 1;
+    margin-bottom: 24px;
+}
+
+
+.item-product__link-title {
+    transition: color 0.3s;
+}
+
+.item-product__link-title:hover {
+    color: #248D45;
+    
+}
+
+
+.options-item-product {
+    display: flex;
+    gap: 1.5rem;
+}
+.options-item-product__item {
+    font-weight: 500;
+    font-size: 0.875rem;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.options-item-product__item::before {
+    content: '';
+    flex-basis: 1.5rem;
+    flex-shrink: 0;
+    aspect-ratio: 1;
+}
+
+.options-item-product__item--timer::before {
+    background: url(../img/icons/timer.svg) center / contain no-repeat;
+}
+.options-item-product__item--snack::before {
+    background: url(../img/icons/fork-knife.svg) center / contain no-repeat;
+}
+
+.item-product--ads {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.item-product__link-image--ads {
+    width: 100%;
+    height: 100%;
+    display: block;
+    flex-grow: 1;
+    border-radius: 0;
+}
+
+.item-product__image--ads {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+   
+}
+
+/* end products item */
+
+
+@media (max-width:72.3125rem) {
+    .products__items {
+        gap: 0.625rem;
+    }
+    .products__header-block {
+        margin-bottom: 1.875rem;
+    }
+ 
+    .products__container {
+        margin-bottom: 3.5rem;
+    }
+}
+
+@media (max-width:37.5rem) {
+    /* .products__header-block {
+        margin-bottom: 1.25rem;
+    } */
+
+    .header-block__title {
+        font-size: 2rem;
+    }
+
+    .products__items {
+        gap: 0.625rem;
+    }
+
+    .products__header-block {
+        margin-bottom: 0.9375rem;
+    }
+
+     .products__container {
+        margin-bottom: 1.5rem;
+    }
+
+}
